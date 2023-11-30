@@ -39,7 +39,6 @@ function Question() {
         choices: [
           'View All Active Employees',
           'Add Employee',
-          // 'Remove Employee' *Feature to be added in future*
           'Update Employee',
           'View All Roles',
           'Add Role',
