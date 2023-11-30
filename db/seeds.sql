@@ -1,9 +1,9 @@
 INSERT INTO department (name)
-VALUES  ('Sales'),
-        ('Finance'),
-        ('Legal'),
-        ('Engineering'),
-        ('Human Resources');
+VALUES  ('Sales'), 
+        ('Finance'), -- accounting team
+        ('Legal'), -- law team
+        ('Engineering'), -- engineering team
+        ('Human Resources'); -- HR team
 
 -- values from sample video
 INSERT INTO role (title,salary, department_id)
@@ -25,21 +25,21 @@ VALUES  ("Salesperson", 80000, 1),
 
 -- originally from video (initially)
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("John", "Doe", 2, null),
+VALUES ("John", "Doe", 2, null), -- a manager (null) 
        ("Mike", "Chan", 1, 1),
        ("Ashly", "Rodriguez", 1, 1),
        ("Kevin", "Tupik", 1, 1),
        
        -- Accounting Team
-       ("Kunal", "Singh", 4, null), 
+       ("Kunal", "Singh", 4, null),  -- a manager (null) 
        ("Malia", "Brown", 3, 5),
 
        -- Law Team    
-       ("Sarah", "Lourd",6, null),
+       ("Sarah", "Lourd",6, null), -- a manager (null) 
        ("Tom", "Allen", 5, 7),
 
        -- Engineering Team
-       ("Tim", "Apple", 9, null),
+       ("Tim", "Apple", 9, null),  -- a manager (null) 
        ("Clark", "Kent", 7, 9),
        ("Tony", "Stark", 7, 9),
        ("Albert", "Einstein", 7, 9),
@@ -47,7 +47,7 @@ VALUES ("John", "Doe", 2, null),
        ("Bruce", "Banner", 8, 9),
        
        -- HR Team  
-       ("Bruce", "Wayne", 10, null),
+       ("Bruce", "Wayne", 10, null), -- a manager (null) 
        ("Steve", "Rodgers", 11, 15),
        ("Jack", "Torrance", 11, 15);
    
